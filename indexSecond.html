@@ -25,7 +25,7 @@
     </header>
 
     <section class=" pb-30 pt-30 flex  ">
-        <div class="max-w-6xl mx-auto px-6 text-white w-full">
+        <div class="max-w-6xl mx-auto px-6 text-(--text-1) w-full">
             <div class="flex gap-3  items-center mb-10">
                 <p
                     class=" text-xs border    text-(--accent) font-semibold border-(--accent-border) px-2 py-1 rounded-full bg-(--accent-dim)  ">
@@ -101,7 +101,7 @@
                             Exactly Is Docker?</h2>
                         <p class="text-(--text-3) pb-5 pt-5  leading-8">Docker is a platform that lets you package your
                             application - along with everything it needs to run - into a single, portable unit called a
-                            <strong class="text-white">container</strong>.
+                            <strong class="text-(--text-1)">container</strong>.
                         </p>
                         <p class="text-(--text-3) pb-5  leading-8">Think of it like a lunchbox. Instead of telling
                             someone "go to the store, buy bread, find mustard, and oh by the way you need a specific
@@ -117,15 +117,14 @@
                             id="vs">
                             Containers vs Virtual Machines</h2>
                         <p class="text-(--text-3) pb-5 py-5  leading-8">Before Docker, the standard answer to "I need an
-                            isolated environment" was a <strong class="text-white">Virtual Machine (VM)</strong>. VMs
+                            isolated environment" was a <strong class="text-(--text-1)">Virtual Machine (VM)</strong>. VMs
                             work - but they're heavy. Each VM runs an entire operating system on top of your operating
                             system. They take minutes to boot, eat up gigabytes of RAM, and feel sluggish.</p>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6  ">
                             <div
-                                class="list-disc list-inside [&>li:first-child]:marker:text-red-400 [&>li:first-child]:font-semibold [&>li:first-child]:text-lg [&>li:first-child]:marker:text-2xl   border border-(--border-subtle) rounded-2xl p-5  bg-(--surface-card)  ">
-                                <li> Virtual Machine</li>
-                                <li class="  text-xs text-(--text-3) leading-8 ">Full OS inside every VM (gigabytes)
-                                </li>
+                                class="list-disc list-inside  border border-(--border-subtle) rounded-2xl p-5  bg-(--surface-card) [&>li:first-child]:marker:text-red-400 [&>li:first-child]:font-semibold [&>li:first-child]:text-lg [&>li:first-child]:marker:text-2xl ">
+                                 <li>Virtual Machine</li>
+                                <li class="text-xs text-(--text-3) leading-8 ">Full OS inside every VM (gigabytes)</li>
                                 <li class="text-xs text-(--text-3) leading-8">Takes minutes to start</li>
                                 <li class="text-xs text-(--text-3) leading-8">Heavy on RAM and CPU</li>
                                 <li class="text-xs text-(--text-3) leading-8">Hard to share and version control</li>
@@ -133,13 +132,13 @@
 
 
                             <div
-                                class="list-disc list-inside [&>li:first-child]:marker:text-green-400 [&>li:first-child]:font-semibold [&>li:first-child]:text-lg [&>li:first-child]:marker:text-2xl class= border border-(--accent-dim) bg-(--surface-code) rounded-2xl p-5    ">
-                                <li>Docker Container</li>
-                                <li class="text-xs text-(--text-3) leading-8 marker:content-['✓'] ">Shares your OS
+                                class="marker:content-['✓']   list-outside  border border-(--accent-border) rounded-2xl p-5  bg-(--accent-dim)   [&>li:first-child]:marker:text-green-400 [&>li:first-child]:font-semibold [&>li:first-child]:text-lg [&>li:first-child]:marker:text-2xl ">
+                                <li class="pl-3 list-disc list-outside"  >Docker Container</li>
+                                <li class="text-xs text-(--text-3) leading-8 pl-3 ">Shares your OS
                                     kernel (megabytes)</li>
-                                <li class="text-xs text-(--text-3) leading-8 ">Starts in under a second</li>
-                                <li class="text-xs text-(--text-3) leading-8 ">Lightweight and efficient</li>
-                                <li class="text-xs text-(--text-3) leading-8 ">Easy to share via Docker Hub</li>
+                                <li class="text-xs text-(--text-3) leading-8 pl-3">Starts in under a second</li>
+                                <li class="text-xs text-(--text-3) leading-8 pl-3">Lightweight and efficient</li>
+                                <li class="text-xs text-(--text-3) leading-8 pl-3 ">Easy to share via Docker Hub</li>
                             </div>
                         </div>
                         <p class="text-(--text-3) pb-5   leading-8">Containers are so lightweight that you can run
@@ -229,7 +228,7 @@
                             typical web app has a backend server, a database, a cache, maybe a background job worker,
                             and a reverse proxy. That's five separate services, each needing its own environment.</p>
 
-                        <p class="text-(--text-3) pb-3   leading-8"><strong class="text-white"> Docker Compose</strong>
+                        <p class="text-(--text-3) pb-3   leading-8"><strong class="text-(--text-1)"> Docker Compose</strong>
                             solves this. It lets you define all your services in a single configuration file. With one
                             command, you can start your entire application stack - database included - in seconds. With
                             another command, you can tear the whole thing down.</p>
@@ -238,19 +237,19 @@
                             <div class="border-b border-(--border) pb-5 ">
                                 <div class="flex gap-3 ">
                                     <div class="rounded-full w-3 h-3 bg-blue-500 inline mt-3"></div>
-                                    <p><strong class="text-white">api -</strong> Your Node.js or Python backend</p>
+                                    <p><strong class="text-(--text-1)">api -</strong> Your Node.js or Python backend</p>
                                 </div>
                                 <div class="flex gap-3 ">
                                     <div class="rounded-full w-3 h-3 bg-green-500 inline mt-3"></div>
-                                    <p><strong class="text-white">db -</strong> PostgreSQL database</p>
+                                    <p><strong class="text-(--text-1)">db -</strong> PostgreSQL database</p>
                                 </div>
                                 <div class="flex gap-3 ">
                                     <div class="rounded-full w-3 h-3 bg-red-500 inline mt-3"></div>
-                                    <p><strong class="text-white">cache -</strong> Redis for fast data access</p>
+                                    <p><strong class="text-(--text-1)">cache -</strong> Redis for fast data access</p>
                                 </div>
                                 <div class="flex gap-3 ">
                                     <div class="rounded-full w-3 h-3 bg-purple-500 inline mt-3"></div>
-                                    <p><strong class="text-white">nginx -</strong> Reverse proxy and static file server
+                                    <p><strong class="text-(--text-1)">nginx -</strong> Reverse proxy and static file server
                                     </p>
                                 </div>
                             </div>
@@ -270,19 +269,19 @@
                         <p>Docker has been adopted so widely because it solves problems at every stage of the software
                             lifecycle - not just development.</p>
                         <ul class="list-disc pl-5 marker:text-(--accent)">
-                            <li><strong class="text-white">Consistent environments everywhere.</strong> Development,
+                            <li><strong class="text-(--text-1)">Consistent environments everywhere.</strong> Development,
                                 testing, staging, production - they all run the same container. The gap between "it
                                 works locally" and "it crashes in production" shrinks dramatically.</li>
-                            <li><strong class="text-white">Faster onboarding.</strong>Faster onboarding. "Clone, run one
+                            <li><strong class="text-(--text-1)">Faster onboarding.</strong>Faster onboarding. "Clone, run one
                                 command, done" onboarding is a reality with Docker. No more three-page setup guides that
                                 are outdated anyway. New team members are productive from day one.</li>
-                            <li><strong class="text-white">Easy scaling.</strong> Because every container is isolated
+                            <li><strong class="text-(--text-1)">Easy scaling.</strong> Because every container is isolated
                                 and stateless, spinning up 10 more instances of your API to handle traffic is
                                 straightforward. This is the foundation of modern cloud architecture.</li>
-                            <li><strong class="text-white">Works with everything.</strong> Docker doesn't care what
+                            <li><strong class="text-(--text-1)">Works with everything.</strong> Docker doesn't care what
                                 language or framework you're using. Node.js, Python, Go, Java, PHP - if it can run on
                                 Linux, it can run in a Docker container.</li>
-                            <li><strong class="text-white" >Gateway to Kubernetes.</strong> Once you
+                            <li><strong class="text-(--text-1)" >Gateway to Kubernetes.</strong> Once you
                                 understand Docker, you're ready to learn Kubernetes - the industry-standard system for
                                 managing containers at scale. Docker is step one of that journey.</li>
                         </ul>
